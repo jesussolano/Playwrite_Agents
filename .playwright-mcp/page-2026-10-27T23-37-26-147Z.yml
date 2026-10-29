@@ -1,0 +1,30 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - img "BuggyBoard" [ref=e7]
+      - heading "BuggyBoard" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - search "Search bugs by title" [ref=e11]
+      - button "New Bug" [ref=e13] [cursor=pointer]
+      - button "Logout" [ref=e15] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - group "Filter by bug state" [ref=e19]:
+        - button "Open" [ref=e20] [cursor=pointer]
+        - button "Closed" [ref=e21] [cursor=pointer]
+      - table "Bugs" [ref=e24]:
+        - rowgroup [ref=e25]:
+          - row [ref=e26]:
+            - columnheader [ref=e27]:
+              - button "ID" [ref=e28] [cursor=pointer]
+            - columnheader [ref=e30]:
+              - button "Severity" [ref=e31] [cursor=pointer]:
+                - text: Severity
+                - generic [aria-hidden] [ref=e32]: ↓
+            - columnheader [ref=e33]:
+              - button "Title" [ref=e34] [cursor=pointer]
+            - columnheader [ref=e36]:
+              - button "Owner" [ref=e37] [cursor=pointer]
+        - rowgroup [ref=e39]:
+          - row [ref=e40]:
+            - cell "Loading…" [ref=e41]

@@ -1,0 +1,62 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - img "BuggyBoard" [ref=e7]
+      - heading "BuggyBoard" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - search "Search bugs by title" [ref=e11]
+      - button "New Bug" [ref=e13] [cursor=pointer]
+      - button "Logout" [ref=e15] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - group "Filter by bug state" [ref=e19]:
+        - button "Open" [ref=e20] [cursor=pointer]
+        - button "Closed" [ref=e21] [cursor=pointer]
+      - table "Bugs" [ref=e24]:
+        - rowgroup [ref=e25]:
+          - row [ref=e26]:
+            - columnheader [ref=e27]:
+              - button "ID" [ref=e28] [cursor=pointer]
+            - columnheader [ref=e30]:
+              - button "Severity" [ref=e31] [cursor=pointer]:
+                - text: Severity
+                - generic [aria-hidden] [ref=e32]: ↓
+            - columnheader [ref=e33]:
+              - button "Title" [ref=e34] [cursor=pointer]
+            - columnheader [ref=e36]:
+              - button "Owner" [ref=e37] [cursor=pointer]
+        - rowgroup [ref=e39]:
+          - button [ref=e40] [cursor=pointer]:
+            - cell "1" [ref=e41]
+            - cell "HIGH" [ref=e42]
+            - cell "Login button misaligned 1793062723503" [ref=e44]
+            - cell "buggy" [ref=e45]
+          - button [ref=e46] [cursor=pointer]:
+            - cell "2" [ref=e47]
+            - cell "HIGH" [ref=e48]
+            - cell "Login button misaligned 1793062799018" [ref=e50]
+            - cell "buggy" [ref=e51]
+  - dialog [ref=e52]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - heading "Create bug" [level=2] [ref=e56]
+        - button "Close" [ref=e57] [cursor=pointer]: ×
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Title
+          - textbox "Title" [active] [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]: Severity
+          - combobox "Severity" [ref=e65]:
+            - option "HIGH"
+            - option "MID" [selected]
+            - option "LOW"
+        - generic [ref=e66]:
+          - generic [ref=e67]: Owner
+          - textbox "Owner" [ref=e68]: buggy
+        - generic [ref=e69]:
+          - generic [ref=e70]: Description
+          - textbox "Description" [ref=e71]
+        - generic [ref=e72]:
+          - button "Cancel" [ref=e73] [cursor=pointer]
+          - button "Save" [ref=e74] [cursor=pointer]

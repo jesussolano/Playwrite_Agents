@@ -1,0 +1,53 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - img "BuggyBoard" [ref=e7]
+      - heading "BuggyBoard" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - search "Search bugs by title" [active] [ref=e11]
+      - button "New Bug" [ref=e13] [cursor=pointer]
+      - button "Logout" [ref=e15] [cursor=pointer]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - group "Filter by bug state" [ref=e19]:
+        - button "Open" [ref=e20] [cursor=pointer]
+        - button "Closed" [ref=e21] [cursor=pointer]
+      - table "Bugs" [ref=e24]:
+        - rowgroup [ref=e25]:
+          - row [ref=e26]:
+            - columnheader [ref=e27]:
+              - button "ID" [ref=e28] [cursor=pointer]
+            - columnheader [ref=e30]:
+              - button "Severity" [ref=e31] [cursor=pointer]:
+                - text: Severity
+                - generic [aria-hidden] [ref=e32]: ↓
+            - columnheader [ref=e33]:
+              - button "Title" [ref=e34] [cursor=pointer]
+            - columnheader [ref=e36]:
+              - button "Owner" [ref=e37] [cursor=pointer]
+        - rowgroup [ref=e39]:
+          - button [ref=e40] [cursor=pointer]:
+            - cell "1" [ref=e41]
+            - cell "HIGH" [ref=e42]
+            - cell "Login button misaligned 1793062723503" [ref=e44]
+            - cell "buggy" [ref=e45]
+          - button [ref=e46] [cursor=pointer]:
+            - cell "2" [ref=e47]
+            - cell "HIGH" [ref=e48]
+            - cell "Login button misaligned 1793062799018" [ref=e50]
+            - cell "buggy" [ref=e51]
+          - button [ref=e75] [cursor=pointer]:
+            - cell "3" [ref=e76]
+            - cell "HIGH" [ref=e77]
+            - cell "Login fails" [ref=e79]
+            - cell "buggy" [ref=e80]
+          - button [ref=e81] [cursor=pointer]:
+            - cell "5" [ref=e82]
+            - cell "MID" [ref=e83]
+            - cell "Checkout crash" [ref=e85]
+            - cell "buggy" [ref=e86]
+          - button [ref=e87] [cursor=pointer]:
+            - cell "4" [ref=e88]
+            - cell "LOW" [ref=e89]
+            - cell "Issue with log-in" [ref=e91]
+            - cell "buggy" [ref=e92]
